@@ -1,0 +1,265 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+@font-face {
+  font-family: "Miama";
+  src: url("../font/Miama.ttf") format("ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  /* font-family: "Miama", sans-serif; */
+  font-family: "Inter", sans-serif;
+  background-color: #000000;
+  color: white;
+}
+
+/* Shared style  */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+#active {
+  background-color: #e6533c;
+}
+
+.btn-primary,
+.btn-primary-2 {
+  background-color: #e6533c;
+  display: inline-block;
+  font-size: 1.125rem;
+  color: white;
+  text-decoration: none;
+  padding: 15px 40px;
+  border-radius: 40px;
+  font-weight: 500;
+  border: 1px solid transparent;
+  transition: all 0.5s linear;
+}
+
+.btn-primary:hover {
+  border: 1px solid #e6533c;
+  background-color: white;
+  color: #000000;
+}
+
+.btn-primary-2 {
+  padding: 12px 75px;
+}
+
+.btn-primary-2:hover {
+  border: 1px solid #e6533c;
+  background-color: white;
+  color: #000000;
+}
+
+p {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.5);
+  font-weight: 300;
+  line-height: 21px;
+}
+
+h3 {
+  font-size: 3rem;
+  font-weight: 900;
+  color: #ffffff;
+  line-height: 120%;
+  margin-bottom: 14px;
+}
+
+section {
+  margin-top: 100px !important;
+}
+
+/* nav bar style  */
+header {
+  background: linear-gradient(
+    180deg,
+    rgb(32 32 32 / 80%),
+    rgba(119, 119, 119, 0) 100%
+  );
+}
+.brand h4 {
+  font-size: 2.4rem;
+  font-weight: 800;
+  font-style: italic;
+  color: #e6533c;
+  letter-spacing: 1px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 55px 0;
+}
+.nav-bar {
+  display: flex;
+  list-style: none;
+  gap: 2.8rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 8px;
+  border-radius: 40px;
+}
+
+.nav-bar a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.125rem;
+  font-weight: 400;
+  padding: 8px 20px;
+  border-radius: 40px;
+  display: inline-block;
+  transition: all 0.5s ease-out;
+}
+.nav-bar a:hover {
+  background-color: #e6533c;
+}
+
+.donwload {
+  background-color: transparent;
+  border: 1px solid #ffffff;
+  margin-left: 10px;
+}
+
+/* header banner style  */
+
+.header-banner {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 50px;
+  align-items: center;
+}
+
+.banner-content {
+  width: 520px;
+}
+
+.banner-img {
+  display: flex;
+  flex-direction: column;
+  justify-items: end;
+  align-items: center;
+  position: relative;
+}
+
+.banner-content h1 {
+  font-size: 4.875rem;
+  line-height: 120%;
+  font-weight: 900;
+  margin-bottom: 25px;
+}
+
+.banner-content h1 span {
+  font-family: "Miama", sans-serif;
+  font-weight: 100;
+  font-size: 9.8rem;
+}
+.banner-btn {
+  margin-top: 30px;
+}
+
+.banner-card-1,
+.banner-card-2 {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  backdrop-filter: blur(20px);
+  background: rgba(48, 48, 48, 0.54);
+  padding: 20px;
+}
+
+.banner-card-1 i,
+.banner-card-2 i {
+  background-color: #e6533c;
+  padding: 12px;
+  border-radius: 50%;
+}
+
+.video-content h4 {
+  font-size: 1.5rem;
+  margin-bottom: 8px;
+}
+.video-content p {
+  line-height: normal;
+}
+
+.banner-card-1 {
+  position: absolute;
+  bottom: 10%;
+  left: 0;
+}
+.banner-card-2 {
+  position: absolute;
+  top: 25%;
+  right: 0;
+}
+
+/* Change Your Habits styles  */
+.habits-title {
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.habits-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin-top: 60px;
+  gap: 40px;
+}
+
+.habits-item {
+  text-align: center;
+}
+.habits-item img {
+  border-radius: 100%;
+  border: 2px solid #777777;
+  margin-bottom: 30px;
+}
+
+.habits-item h5 {
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+/* run extra mile style  */
+
+.run-extra-container {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 165px;
+  border-radius: 18px;
+  background: rgba(34, 34, 34, 0.874);
+  padding: 30px;
+  align-items: center;
+}
+
+.run-extra-img img {
+  border-radius: 18px;
+}
+
+.run-extra-content {
+  margin-left: 20px;
+}
+
+.run-extra-content p {
+  max-width: 440px;
+  margin-bottom: 30px;
+}
