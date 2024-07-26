@@ -443,6 +443,50 @@ nav {
   font-size: 1rem;
 }
 
+/* our programs section style  */
+.program-section {
+  margin-bottom: 50px !important;
+}
+.program-card-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.program-card {
+  background-color: rgba(34, 34, 34, 0.874);
+  padding: 23px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: flex-start;
+  cursor: pointer;
+  transition: all 0.5s linear;
+}
+
+.program-card:hover {
+  background-color: #e6533c;
+}
+
+.program-card > i {
+  font-size: 40px;
+}
+
+.program-card h4 {
+  font-size: 1.5rem;
+}
+
+.program-card a {
+  font-size: 1.2rem;
+  color: white;
+  text-decoration: none;
+  margin-top: 25px;
+}
+
+.program-card a:hover {
+  text-decoration: underline;
+}
 /* BMI Calculator styles */
 
 .bmi-title {
@@ -794,6 +838,9 @@ hr {
   .footer-brand h3 {
     font-size: 3.5rem;
   }
+  .program-card-container {
+    grid-template-columns: 1fr;
+  }
 }
 
 @media screen and (min-width: 572px) and (max-width: 992px) {
@@ -906,5 +953,9 @@ hr {
     grid-template-columns: 1fr;
     gap: 50px;
     margin-bottom: 80px;
+  }
+
+  .program-card-container {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
