@@ -80,6 +80,10 @@ section {
   margin-top: 100px !important;
 }
 
+.opacity {
+  opacity: 50%;
+}
+
 /* nav bar style  */
 header {
   background: linear-gradient(
